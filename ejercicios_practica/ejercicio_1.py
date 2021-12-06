@@ -10,6 +10,9 @@
 # Ejercicios con bucles "while"
 
 x = 0
+while x < 6:
+    x = x + 1
+    print("El valor de X =", x)
 # Dado el siguiente "while", complete la condicion
 # para que el "while" itere siempre que <x sea menor a 6>
 # Además, complete la línea de código necesaria para que
@@ -17,7 +20,8 @@ x = 0
 condicion = False
 
 # reemplace "condicion" por lo que crea necesario
-while condicion:    
+while x < -10: #condicion:  
+    x = x + 1  
     print("Valor de x =", x)
     # Coloque la línea de código para que "x" incremente "1"
 
@@ -26,8 +30,15 @@ x = 5
 # para que el "while" itere siempre que <x sea mayor o igual a 0>
 # Además, complete la línea de código necesaria para que
 # el valor de "x" decremente "1" en cada iteración
+while x >= 0:
+    x = x + 1
+    if x == int(10):
+        print("El valor de x =", x)
+        break
+    print("EL valor de x =", x)
 
-while condicion:    # reemplace "condicion" por lo que crea necesario
+while x > 0: #condicion:    # reemplace "condicion" por lo que crea necesario
+    x = x - 1
     print("Valor de x =", x)
     # Coloque la línea de código para que "x" decremente "1"
 
