@@ -35,3 +35,38 @@ alguno de lo soportados o no es la palabra "FIN".
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+primer_numero = int(input("Ingrese un numero:\n"))
+segundo_numero = int(input("ingrese un numero:\n"))
+operacion = input("Ingresar en letras el tipo de operacion:\n")
+
+#while operacion != 'suma' or operacion != "resta" or operacion != "multiplicacion" or operacion != "division" or operacion != "potencia":
+        #print("La operacion ingresada no existe, ingrese nuevamente:\n")
+        #operacion = input("Ingresar en letras el tipo de operacion:\n")
+        
+palabra_final = str(input("Digite la palabra FIN para mostrar el resultado:\n"))
+
+while palabra_final == "fin":
+    if operacion == "suma":
+        resultado = primer_numero + segundo_numero
+        print(resultado)
+        break
+    if operacion == "resta":
+        resultado = primer_numero - segundo_numero
+        print(resultado)
+        break
+    if operacion == "multiplicacion":
+        resultado = primer_numero * segundo_numero
+        print(resultado)
+        break
+    if operacion == "division":
+        resultado = primer_numero / segundo_numero
+        print(resultado)
+        break
+    if operacion == "potencia":
+        resultado = primer_numero ** segundo_numero
+        print(resultado)
+        break
+    else: 
+        print("La palabra clave no es correcta, intente nuevamente:\n")
+        operacion = input("Digite la palabra FIN para mostrar el resultado:\n")

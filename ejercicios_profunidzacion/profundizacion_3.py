@@ -10,6 +10,9 @@
 # de mucho más tiempo para abordar estos temas por su cuenta.
 # Requiere mayor tiempo de dedicación e investigación autodidacta.
 
+from typing import Dict
+
+
 notas = [70, 82, -1, 65, 55, 67, 87, 92, -1]
 
 # IMPORTANTE: NO borrar los comentarios en VERDE o NARANJA
@@ -46,8 +49,17 @@ sumatoria = 0           # Ya le hemos inicializado en 0
 cantidad_notas = 0      # Aquí debe contar cuantas notas válidas encontró
 cantidad_ausentes = 0   # Aquí debe contar cuantos ausentes hubo
 
+for i in notas:
+    cantidad_notas = cantidad_notas + 1
+
 # Realice aquí el bucle para recorrer todas las notas
 # y cacular la sumatoria
+
+sumatoria = sum(notas)
+promedio = sumatoria / cantidad_notas
+
+"no recuerdo como se pasaba de numero a string"
+print(promedio)
 
 # Terminado el bucle calcule el promedio como
 # promedio = sumatoria / cantidad_notas

@@ -51,6 +51,19 @@ temperatura_len = 0         # Aquí debe almacenar cuantas temperatuas hay en la
 
 # Colocar el bucle aqui......
 
+for i in temp_dataloger:
+    temp = temp + 1
+
+temperatura_max = max(temp_dataloger)
+temperatura_min = min(temp_dataloger)
+temperatura_sumatoria = sum(temp_dataloger)
+temperatura_len = temp
+
+print("La temperatura maxima del rango es", temperatura_max)
+print("La temperatura minima del rango es", temperatura_min)
+print("La cantidad de temperaturas tomadas son", temperatura_len)
+print("La temperatura promedio es", temperatura_promedio)
+
 # Al finalizar el bucle compare si el valor que usted calculó para
 # temperatura_max y temperatura_min coincide con el que podría calcular
 # usando la función "max" y la función "min" de python

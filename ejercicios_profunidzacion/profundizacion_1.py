@@ -27,11 +27,19 @@ sino que va hasta el anterior.
 print('Comenzamos a ponernos serios!')
 # Empezar aquí la resolución del ejercicio
 
-# inicio = ....
-# fin = ....
+inicio = int(input("Ingrese el primer numero del rango:\n"))
+fin = int(input("Ingrese el numero del final del rango:\n"))
 
-# cantidad_numeros ....
-# sumatoria ....
+cantidad_numeros = 0
+
+for numero in range(inicio, fin + 1):
+    cantidad_numeros = cantidad_numeros + 1
+
+sumatoria = sum(range(inicio, fin + 1))
+promedio = sumatoria / cantidad_numeros
+
+print("La cantidad de numeros es", cantidad_numeros)
+print("El promedio del rango es", promedio)
 
 # bucle.....
 
